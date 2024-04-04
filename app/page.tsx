@@ -3,7 +3,7 @@ import Carousel from "./modules/carousel/carousel";
 import JournalDescription from "./modules/description/description";
 import { headers } from "next/headers";
 
-export function getIp() {
+export async function getIp() {
   let forwardedFor = headers().get("x-forwarded-for");
   let realIp = headers().get("x-real-ip");
   if (forwardedFor) {

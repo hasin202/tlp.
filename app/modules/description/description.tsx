@@ -4,7 +4,7 @@ import BuyWithAmazonBtn from "../buy-with-amazon-btn/buy-with-amazon-btn";
 const JournalDescription = () => {
   return (
     <div className="md:w-2/6 flex flex-col justify-between">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 mb-4 md:mb-0">
         <h2 className="font-sans text-xl">Hard Cover Journal</h2>
         <p className="font-sans">
           Embark on a transformative journey with &quot;The Limitless

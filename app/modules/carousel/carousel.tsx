@@ -1,7 +1,4 @@
 "use client";
-import { useState } from "react";
-import { ChevronRight } from "lucide-react";
-import { ChevronLeft } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -9,43 +6,17 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./carousel.css";
+import Image from "next/image";
 const imgs = [
-  "/imgs/1.png",
-  "/imgs/2.png",
-  "/imgs/3.png",
-  "/imgs/4.png",
-  "/imgs/5.png",
-  "/imgs/6.png",
-  "/imgs/7.png",
-  "/imgs/8.png",
+  { url: "/imgs/1.webp", alt: "journal cover" },
+  { url: "/imgs/2.webp", alt: "first page of journal" },
+  { url: "/imgs/3.webp", alt: "goal setting page of journal" },
+  { url: "/imgs/4.webp", alt: "individual goal setting page journal" },
+  { url: "/imgs/5.webp", alt: "daily journalling page" },
+  { url: "/imgs/6.webp", alt: "daily journalling page" },
+  { url: "/imgs/7.webp", alt: "weekly review journalling page" },
+  { url: "/imgs/8.webp", alt: "weekly review journalling page" },
 ];
-
-// const Carousel = () => {
-//   const [curr, setCurr] = useState<number>(0);
-//   return (
-//     <div className="relative">
-//       <img src={imgs[curr]} className="rounded-lg" />
-//       <div className="absolute inset-0 flex justify-between items-center px-4">
-//         <button
-//           className="border rounded-full"
-//           onClick={() =>
-//             curr === imgs.length - 1 ? setCurr(0) : setCurr(curr + 1)
-//           }
-//         >
-//           <ChevronLeft />
-//         </button>
-//         <button
-//           className="border rounded-full"
-//           onClick={() =>
-//             curr === 0 ? setCurr(imgs.length - 1) : setCurr(curr - 1)
-//           }
-//         >
-//           <ChevronRight />
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
 
 const Carousel = () => {
   return (
@@ -58,7 +29,7 @@ const Carousel = () => {
         {imgs.map((img, i) => {
           return (
             <SwiperSlide key={i}>
-              <img src={img} className="rounded-lg" />
+              <img src={img.url} className="rounded-lg" alt={img.alt} />
             </SwiperSlide>
           );
         })}

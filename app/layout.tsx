@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${galderglynn.variable}`}>
+      <body className={`${inter.variable} ${galderglynn.variable} font-sans`}>
         <div className="p-12 md:px-32 2xl:px-48 3xl:px-64 mb-16">
           <h1 className="text-5xl font-galderglynn mb-4">TLP.</h1>
           {children}

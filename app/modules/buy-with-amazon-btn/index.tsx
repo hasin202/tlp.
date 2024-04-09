@@ -41,7 +41,7 @@ const BuyWithAmazonBtn = () => {
 
   return (
     <a
-      className="flex items-center justify-center gap-4 bg-white text-black w-full font-sans rounded py-4"
+      className="flex items-center justify-center gap-4 bg-white text-black w-full rounded py-4"
       target="_blank"
       href={url}
     >

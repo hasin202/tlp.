@@ -1,5 +1,5 @@
+import BuyWithAmazonBtn from "../buy-with-amazon-btn";
 import JournalContentInfo from "./content-info";
-import BuyWithAmazonBtn from "../buy-with-amazon-btn/buy-with-amazon-btn";
 
 const JournalDescription = () => {
   return (

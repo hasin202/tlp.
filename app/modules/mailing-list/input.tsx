@@ -46,7 +46,7 @@ const MailInput = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="font-sans flex w-[22rem] relative"
+        className="flex w-[22rem] relative"
       >
         <FormField
           control={form.control}

@@ -11,14 +11,14 @@ const JournalContentInfo = () => {
   return (
     <Accordion
       type="single"
-      className="font-sans hover:no-underline hidden md:inline"
+      className="hover:no-underline hidden md:inline"
       collapsible
     >
       <AccordionItem value="item-1">
         <AccordionTrigger>Journal Content</AccordionTrigger>
         <AccordionContent>
           {" "}
-          <ul className="list-disc ml-8 font-sans">
+          <ul className="list-disc ml-8">
             <li>Goal setting for success</li>
             <li>13 weeks of self improvement</li>
             <li>Well structured daily journalling pages</li>

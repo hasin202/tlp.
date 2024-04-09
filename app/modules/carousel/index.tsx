@@ -6,7 +6,6 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./carousel.css";
-import Image from "next/image";
 const imgs = [
   { url: "/imgs/1.webp", alt: "journal cover" },
   { url: "/imgs/2.webp", alt: "first page of journal" },

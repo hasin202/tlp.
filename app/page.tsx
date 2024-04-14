@@ -6,7 +6,7 @@ import PageBreak from "./modules/page-break";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-16 md:gap-24">
+    <main className="flex flex-col gap-16 md:gap-24">
       <div className="flex flex-col md:flex-row gap-8">
         <Carousel />
         <JournalDescription />

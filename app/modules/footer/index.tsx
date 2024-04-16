@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex sm:flex-col md:flex-row gap-8">
           <a
             href="mailto:contact.thelimitlessproject@gmail.com"
-            className="text-xs px-4 flex items-center justify-center border border-white rounded-lg"
+            className="text-xs px-4 flex items-center justify-center bg-black rounded-[0.4rem] text-[#F7F7F7]"
           >
             contact us
           </a>

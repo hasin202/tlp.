@@ -46,7 +46,7 @@ const MailInput = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex w-[22rem] relative"
+        className="flex w-full md:w-[22rem] relative"
       >
         <FormField
           control={form.control}
@@ -86,7 +86,7 @@ const MailInput = () => {
           {submitLoading ? (
             <LoaderCircle className="animate-spin" />
           ) : (
-            <ChevronRight color="#949494" className="hover:stroke-white" />
+            <ChevronRight color="#949494" className="hover:stroke-black" />
           )}
         </button>
       </form>

@@ -14,12 +14,15 @@ export default function Home() {
     <main className="flex flex-col gap-16 md:gap-24">
       <div className="flex flex-col gap-8">
         <Hero />
-        <div className="flex flex-col gap-8 md:gap-12 px-10 md:px-16 lg:px-24 2xl:px-48 3xl:px-64">
+        <div className="flex flex-col gap-8 md:gap-12 px-10 md:px-16 lg:px-24 2xl:px-48 3xl:px-64 mb-20">
           <PageBreak />
           <GoalSetting />
           <Journalling />
           <WeeklyReviews />
           <Matrix />
+
+          <PageBreak />
+          <MailingList />
         </div>
       </div>
       {/* <PageBreak />

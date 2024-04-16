@@ -20,6 +20,7 @@ export default function Home() {
           <Journalling />
           <WeeklyReviews />
           <Matrix />
+
           <PageBreak />
           <MailingList />
         </div>

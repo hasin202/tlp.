@@ -1,4 +1,4 @@
-import BuyWithAmazonBtn from "../buy-with-amazon-btn";
+import BuyWithAmazonBtn from "../call-to-actions";
 import JournalContentInfo from "./content-info";
 
 const JournalDescription = () => {

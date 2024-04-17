@@ -1,10 +1,12 @@
 import ConfigurableCTA from "../../call-to-actions/configurable-cta";
 
-const points = [
-  "A unique visual tool that allows you to see your progress at a glance.",
-  `With each day shade in the completed non-negotiable's.`,
-  "Feel a sense of achievement with each shaded box",
-];
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import points from "./points";
 
 const Matrix = () => {
   return (
@@ -12,21 +14,19 @@ const Matrix = () => {
       <img src="/assets/matrix.png" className="md:w-[50%]" />
       <div className="flex flex-col gap-4 md:gap-8">
         <h2 className="font-galderglynn text-3xl md:text-5xl">
-          13 weeks of journalling
+          The Limitless Matrix
         </h2>
-        <ul className="flex flex-col gap-2 w-[95%]">
+        <Accordion type="single" collapsible className="w-full">
           {points.map((point, key) => {
             return (
-              <li
-                className="relative before:content-['+'] before:absolute before:left-0 before:top-0"
-                key={key}
-              >
-                <p className="ml-6">{point}</p>
-              </li>
+              <AccordionItem value={`goal-point-${key}`}>
+                <AccordionTrigger>{point.title}</AccordionTrigger>
+                <AccordionContent>{point.info}</AccordionContent>
+              </AccordionItem>
             );
           })}
-        </ul>
-        <ConfigurableCTA ctaText="Start Shading in Now!" />
+        </Accordion>
+        <ConfigurableCTA ctaText="Launch Your Limitless Journey!" />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const BuyWithAmazonBtn = () => {
   const url = useCountryBasedUrl();
 
   return (
-    <Button className="w-32 md:w-44 2xl:w-64">
+    <Button className="w-40 md:w-44 2xl:w-64">
       <a
         className="text-sm flex items-center justify-center gap-2 md:gap-4 w-full py-4"
         target="_blank"

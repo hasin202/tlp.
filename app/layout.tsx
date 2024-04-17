@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${galderglynn.variable} font-sans`}>
         <div>
           {/* <h1 className="text-5xl font-galderglynn mb-4">TLP.</h1> */}

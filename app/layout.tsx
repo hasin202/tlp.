@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${galderglynn.variable} font-sans`}>
-        <div className="py-6 md:py-0">
+        <div>
           {/* <h1 className="text-5xl font-galderglynn mb-4">TLP.</h1> */}
           {/* <p className="xs:bg-organge-500 bg-red-500 md:bg-blue-500 lg:bg-green-500 xl:bg-yellow-500 2xl:bg-purple-500">
             bp

@@ -1,4 +1,4 @@
-type Point = {
+export type Point = {
   title: string;
   info: string;
 };

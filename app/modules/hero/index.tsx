@@ -3,7 +3,7 @@ import BuyWithAmazonBtn from "../call-to-actions";
 
 const Hero = () => {
   return (
-    <div className="relative w-full flex flex-col items-center justify-center min-h-screen gap-4 md:gap-8">
+    <div className="relative w-full flex flex-col items-center justify-center min-h-[80vh] md:min-h-[90vh] gap-4 md:gap-8 md:pt-6">
       <img
         className=" md:max-w-[35rem] xl:max-w-[40rem] 2xl:max-w-[55rem]"
         src="/assets/hero.webp"

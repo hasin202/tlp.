@@ -11,7 +11,7 @@ const ConfigurableCTA: React.FC<PropsType> = ({ ctaText }) => {
   const url = useCountryBasedUrl();
 
   return (
-    <Button className="w-full md:max-w-44 xl:max-w-64">
+    <Button className="w-full md:max-w-44 xl:max-w-64 mt-4">
       <a
         className="text-sm flex items-center justify-center gap-2 md:gap-4 w-full py-4"
         target="_blank"

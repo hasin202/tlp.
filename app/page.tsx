@@ -4,11 +4,9 @@ import JournalDescription from "./modules/description";
 import MailingList from "./modules/mailing-list";
 import PageBreak from "./modules/page-break";
 import Hero from "./modules/hero";
-import GoalSetting from "./modules/extra-info/goal-setting";
-import Journalling from "./modules/extra-info/journalling";
-import WeeklyReviews from "./modules/extra-info/weeky-reviews";
-import Matrix from "./modules/extra-info/matrix";
+
 import { Button } from "@/components/ui/button";
+import SellingPointsContainer from "./modules/selling-points/selling-points-container";
 
 export default function Home() {
   return (
@@ -17,11 +15,7 @@ export default function Home() {
         <Hero />
         <div className="flex flex-col gap-16 md:gap-24 px-10 md:px-16 lg:px-24 2xl:px-48 3xl:px-64 mb-20">
           <PageBreak />
-          <GoalSetting />
-          <Journalling />
-          <WeeklyReviews />
-          <Matrix />
-
+          <SellingPointsContainer />
           <PageBreak />
           <MailingList />
         </div>

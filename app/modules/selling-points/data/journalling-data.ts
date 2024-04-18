@@ -1,4 +1,4 @@
-import { Point } from "../goal-setting/points";
+import { DataType, Point } from "./types";
 
 const points: Point[] = [
   {
@@ -19,4 +19,12 @@ const points: Point[] = [
   },
 ];
 
-export default points;
+const journallingData: DataType = {
+  img: "/assets/daily.png",
+  title: "13 Weeks of Journalling",
+  points: points,
+  ctaText: "Start Journalling Now!",
+  imgPositionLeft: false,
+};
+
+export default journallingData;

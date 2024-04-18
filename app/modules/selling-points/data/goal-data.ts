@@ -1,9 +1,6 @@
-export type Point = {
-  title: string;
-  info: string;
-};
+import { DataType, Point } from "./types";
 
-const goals: Point[] = [
+const points: Point[] = [
   {
     title: "Guidance from one of the Greats",
     info: "Start your journey by following a goal setting framework inspired by warren buffet.",
@@ -22,4 +19,12 @@ const goals: Point[] = [
   },
 ];
 
-export default goals;
+const goalData: DataType = {
+  img: "/assets/goals.png",
+  title: "Goal Setting Guidance",
+  points: points,
+  ctaText: "Achieve Your Goals!",
+  imgPositionLeft: true,
+};
+
+export default goalData;

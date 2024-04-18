@@ -1,4 +1,4 @@
-import { Point } from "../goal-setting/points";
+import { DataType, Point } from "./types";
 
 const points: Point[] = [
   {
@@ -19,4 +19,12 @@ const points: Point[] = [
   },
 ];
 
-export default points;
+const reviewsData: DataType = {
+  img: "/assets/review.png",
+  title: "Weekly Reviews",
+  points: points,
+  ctaText: "Set yourself up for Success!",
+  imgPositionLeft: true,
+};
+
+export default reviewsData;

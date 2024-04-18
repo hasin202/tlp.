@@ -1,4 +1,4 @@
-import { Point } from "../goal-setting/points";
+import { DataType, Point } from "./types";
 
 const points: Point[] = [
   {
@@ -11,4 +11,12 @@ const points: Point[] = [
   },
 ];
 
-export default points;
+const matrixData: DataType = {
+  img: "/assets/matrix.png",
+  title: "The Limitless Matrix",
+  points: points,
+  ctaText: "Launch Your Limitless Journey!",
+  imgPositionLeft: false,
+};
+
+export default matrixData;

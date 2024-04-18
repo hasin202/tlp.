@@ -1,6 +1,4 @@
 import React from "react";
-import Carousel from "./modules/carousel";
-import JournalDescription from "./modules/description";
 import MailingList from "./modules/mailing-list";
 import PageBreak from "./modules/page-break";
 import Hero from "./modules/hero";

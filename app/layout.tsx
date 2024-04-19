@@ -28,10 +28,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${galderglynn.variable} font-sans`}>
-        <div className="p-12 md:px-32 2xl:px-48 3xl:px-64 mb-16">
-          <h1 className="text-5xl font-galderglynn mb-4">TLP.</h1>
+        <div>
+          {/* <h1 className="text-5xl font-galderglynn mb-4">TLP.</h1> */}
+          {/* <p className="xs:bg-organge-500 bg-red-500 md:bg-blue-500 lg:bg-green-500 xl:bg-yellow-500 2xl:bg-purple-500">
+            bp
+          </p> */}
           {children}
         </div>
         <Footer />

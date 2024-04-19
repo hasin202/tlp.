@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useState } from "react";
 
 const getGeoInfo = async (): Promise<string> => {
@@ -27,10 +26,11 @@ const amazonUrls: { [key: string]: string } = {
   AU: "https://www.amazon.com.au/Limitless-Project-Unlock-Your-Potential/dp/B0CZM6X6LY/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.9GIXRLLkhTA4jEGVUSl_C4PVzXg67BloQ17eh2LZATf6ntC-yDZtOHn-B4tUT0v3xlMwl_GMcY-nfB2RcFC-7LnWG3ul_ILzNJ4OF1IMehwC0hZSxs-ZupHJsl6Ola-yIFy-f0Gc6uWusD24YYO40RVj4YXBNz12CdZ2capRej4ij5nygbqz-8yki8RY2msS1K8ffGLgRZi8rG6CxWDx70ZvquBzfaRWajXGxG5TvxU.ipLeNwBZSUlpAHyRb0pX4ads2oFggsYK_JYPsliaf3U&qid=1712180904&sr=8-1",
 };
 
-const BuyWithAmazonBtn = () => {
+export default function useCountryBasedUrl() {
   const [url, setUrl] = useState(
     "https://www.amazon.com/Limitless-Project-Unlock-Your-Potential/dp/B0CVGVSVPV/ref=sr_1_1?crid=37EE7VBRHG2RG&dib=eyJ2IjoiMSJ9.9GIXRLLkhTA4jEGVUSl_C4PVzXg67BloQ17eh2LZATf6ntC-yDZtOHn-B4tUT0v3xlMwl_GMcY-nfB2RcFC-7LnWG3ul_ILzNJ4OF1IMehwC0hZSxs-ZupHJsl6Ola-yIFy-f0Gc6uWusD24YYO40RVj4YXBNz12CdZ2capRej4ij5nygbqz-8yki8RY2msS1K8ffGLgRZi8rG6CxWDx70ZvquBzfaRWajXGxG5TvxU.ipLeNwBZSUlpAHyRb0pX4ads2oFggsYK_JYPsliaf3U&dib_tag=se&keywords=the+limitless+project&qid=1712180904&sprefix=the+limitless+pr%2Caps%2C95&sr=8-1"
   );
+
   useEffect(() => {
     const setCode = async () => {
       let code = await getGeoInfo();
@@ -39,16 +39,5 @@ const BuyWithAmazonBtn = () => {
     setCode();
   }, []);
 
-  return (
-    <a
-      className="flex items-center justify-center gap-4 bg-white text-black w-full rounded py-4"
-      target="_blank"
-      href={url}
-    >
-      <img src="/imgs/amazon.svg" className="w-6" />
-      <p>Buy On Amazon</p>
-    </a>
-  );
-};
-
-export default BuyWithAmazonBtn;
+  return url;
+}

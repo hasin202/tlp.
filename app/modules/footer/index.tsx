@@ -5,13 +5,13 @@ import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <div>
-      <hr className="h-px my-8 bg-gray-600 border-0 w-full" />
+      <hr className="h-px mb-4 bg-gray-600 border-0 w-full" />
       <div className="p-12 md:px-32 2xl:px-48 3xl:px-64 py-8 flex justify-between items-center">
         <h2 className="text-2xl font-galderglynn">TLP.</h2>
         <div className="flex sm:flex-col md:flex-row gap-8">
           <a
             href="mailto:contact.thelimitlessproject@gmail.com"
-            className="text-xs px-4 flex items-center justify-center border border-white rounded-lg"
+            className="text-xs px-4 flex items-center justify-center bg-black rounded-[0.4rem] text-[#F7F7F7]"
           >
             contact us
           </a>

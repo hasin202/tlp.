@@ -13,7 +13,7 @@ const BuyWithAmazonBtn = () => {
         target="_blank"
         href={url}
       >
-        <img src="/imgs/amazon.svg" className="w-4 md:w-6" />
+        <img src="/assets/amazon.svg" className="w-4 md:w-6" />
         <p>Buy Now</p>
       </a>
     </Button>

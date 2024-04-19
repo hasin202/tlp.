@@ -17,7 +17,7 @@ const SellingPoint: React.FC<PropsType> = ({ data }) => {
     <div
       className={`flex flex-col gap-8 ${
         data.imgPositionLeft ? "md:flex-row-reverse" : "md:flex-row"
-      } md:justify-end md:gap-16 md:items-center`}
+      } md:justify-center md:gap-16 md:items-center`}
     >
       <div className="flex flex-col gap-4 md:gap-8">
         <h2 className="font-galderglynn text-3xl md:text-5xl">{data.title}</h2>

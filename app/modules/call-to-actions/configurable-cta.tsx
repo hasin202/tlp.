@@ -1,15 +1,15 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import React from "react";
-import useCountryBasedUrl from "./use-country-based-url";
+import getCountryBasedUrl from "./use-country-based-url";
 
-type PropsType = {
+type TProps = {
   ctaText: string;
 };
 
-const ConfigurableCTA: React.FC<PropsType> = ({ ctaText }) => {
-  const url = useCountryBasedUrl();
+const ConfigurableCTA: React.FC<TProps> = async ({ ctaText }) => {
+  const url = await getCountryBasedUrl();
 
+  if (!url) return;
   return (
     <Button className="w-full md:max-w-44 xl:max-w-64 mt-4">
       <a

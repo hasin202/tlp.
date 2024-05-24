@@ -22,7 +22,7 @@ const Hero = async () => {
       </div>
       {!url && (
         <div className="max-w-72 md:max-w-[35rem] xl:max-w-[40rem] 2xl:max-w-[55rem] text-xs text-center text-gray-400">
-          <p>Sorry, we don't currently ship to your country.</p>
+          <p>Sorry, we don&apos;t currently ship to your country.</p>
           <br />
           <p>
             Sign up for our mailing list to stay updated. Something exciting is
